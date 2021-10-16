@@ -8,6 +8,8 @@ RUN apt-get update -qq && apt-get install -y build-essential libpq-dev \
   && apt-get update && apt-get install -y yarn \
   && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
   && apt-get install -y nodejs mariadb-client \
+  && yarn add react-router-dom axios styled-components react-icons react-toastify \
+  && yarn install \
   && mkdir /api
 
 WORKDIR /api
